@@ -22,7 +22,7 @@ include("connexion_bdd.php");
             <input type="email" name="user" placeholder="Username">
         </fieldset>
         <fieldset>
-            <input type="text" name="pass" placeholder="Password">
+            <input type="password" name="pass" placeholder="Password">
         </fieldset>
         
         <fieldset>

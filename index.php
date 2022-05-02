@@ -1,26 +1,23 @@
 <?php
+$conn= new mysqli("localhost","root","","admin_auf");
+if($conn->connect_error){
+    echo "Error";
+}
+?>
+<?php
+if(isset($_GET["entrez"])){
     $nom=$_GET["nom"];
     $pre=$_GET["prenom"];
     $mail=$_GET["email"];
     $pass=$_GET["pass"];
-if(isset($_GET["entrez"])){
-    $error="";
-if(empty($nom)){$error="Remplissez tous les champs"; ;}
-if(empty($pre)){$error="Remplissez tous les champs";}    
-if(empty($mail)){$error="Remplissez tous les champs";}    
-if(empty($pass)){$error="Remplissez tous les champs";}  }  
-else{
-    $conn= new mysqli("localhost","root","","admin_auf");
-    if($conn->connect_error){
-    echo "Error";
+
+    
     $sign= "INSERT INTO `admin`(nom,prenom,email,password) value('$nom', '$pre', '$mail', '$pass')";
     $resulta= mysqli_query($conn, $sign);
     if ($resulta) {
         header('Location: ./choice.html');}
 }
-}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
