@@ -10,7 +10,8 @@ if(isset($_GET["entrez"])){
     $pre=$_GET["prenom"];
     $mail=$_GET["email"];
     $pass=$_GET["pass"];
-    $sign= "INSERT INTO `admin`(nom,prenom,email,password) value('$nom', '$pre', '$mail', '$pass')";
+    $hash= password_hash($pass, PASSWORD_DEFAULT);
+    $sign= "INSERT INTO `admin`(nom,prenom,email,password) value('$nom', '$pre', '$mail', '$hash')";
     $resulta= mysqli_query($conn, $sign);
     if ($resulta) {
         header('Location: ./choice.html');}

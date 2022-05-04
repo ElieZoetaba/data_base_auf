@@ -12,7 +12,7 @@
             values('$nom','$prenom','$naissance','$debut','$contact','$email')";
             $result = mysqli_query($connexion, $sql);
             if ($result) {
-                echo '<p>Ajouter avec succes <br><br><br><a href="./inscription_abon.php">OK</a></p>';
+                header("Location: ./liste_abon.php");
             }
         }
         ?>
