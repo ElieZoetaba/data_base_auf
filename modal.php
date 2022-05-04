@@ -12,13 +12,15 @@
             values('$nom','$prenom','$naissance','$debut','$contact','$email')";
             $result = mysqli_query($connexion, $sql);
             if ($result) {
-                echo '<p>Ajouter avec succes <br><br><br><a href="./inscription_abon.php">OK</a></p>';
+                echo '<p>Ajouter avec succes <br><br><br><a href="./liste_abon.php">OK</a></p>';
+                // header("Location: index.php");
+                
             }
         }
-        ?>
+    ?>
     <style>
         body{
-            background-color: rgba(135, 103, 7, 0.355);
+        background-color: rgba(135, 103, 7, 0.355);
         }
         p{
             width: 20%;
@@ -33,7 +35,6 @@
             margin-top: 15%;
             font: 1.5em sans-serif;
             box-shadow: 2px 4px 6px black;
-            border-radius: 20px;
         }
         a{
             text-decoration: none;
@@ -44,4 +45,3 @@
         }
     </style>
     
-

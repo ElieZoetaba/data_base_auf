@@ -10,8 +10,6 @@ if(isset($_GET["entrez"])){
     $pre=$_GET["prenom"];
     $mail=$_GET["email"];
     $pass=$_GET["pass"];
-
-    
     $sign= "INSERT INTO `admin`(nom,prenom,email,password) value('$nom', '$pre', '$mail', '$pass')";
     $resulta= mysqli_query($conn, $sign);
     if ($resulta) {
@@ -44,7 +42,10 @@ if(isset($_GET["entrez"])){
             <input type="email" name="email" placeholder="Email">
         </fieldset>
         <fieldset>
-            <input type="text"z name="pass" placeholder="Confirmez le mot de Passe">
+            <input type="password" placeholder="Entrez le mot de Passe">
+        </fieldset>
+        <fieldset>
+            <input type="password"z name="pass" placeholder="Confirmez le mot de Passe">
         </fieldset>
         <fieldset>
             <input type="submit" name="entrez" value="S'inscrire" class="buttun">

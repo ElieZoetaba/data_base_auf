@@ -10,13 +10,17 @@ include("./connexion_bdd.php");
 if(isset($_POST["submit"])){
 
     header('location:inscription_abon.php');
-    // $user=$_POST["user"];
-    // $pass=$_POST["pass"];
-    // $hash = password_hash($pass, PASSWORD_DEFAULT);
-    // $sql = "INSERT INTO `admin`(email ,password) value('$user','$hash')";
-    // $result= mysqli_query($conn, $sql);
-    // if($result){
-    //     header("Location: inscri_admin.php");
-    // }echo "error";
+     $user=$_POST["user"];
+     $passe=$_POST["pass"];
+     $hash = password_hash($pass, PASSWORD_DEFAULT);
+     $sql = "SELECT FROM admin password where password = $passe and email= $user";
+     $result= mysqli_query($conn, $sql);
+     if($result){
+       if(mysqli_fetch_assoc($result)){
+        header("Location: liste_abon.html");
+       }
+         
+     }echo "error";
 }
 ?>
+

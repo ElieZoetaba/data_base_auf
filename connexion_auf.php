@@ -24,7 +24,6 @@ include("connexion_bdd.php");
         <fieldset>
             <input type="password" name="pass" placeholder="Password">
         </fieldset>
-        
         <fieldset>
             <input type="submit" name="submit" value="Register" class="buttun">
         </fieldset>

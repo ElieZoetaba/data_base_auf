@@ -113,16 +113,7 @@
   }
   
   
-  .buttun{
-    background: rgb(102, 16, 16);
-    width: 20%;
-    padding: 5px;
-    height: auto !important;
-    border: 2px solid rgb(102, 16, 16);
-    color: #fff;
-    text-align:center;
-    cursor: pointer;
-  }
+  
   section{
     width: 30% !important;
     margin: 0px auto;

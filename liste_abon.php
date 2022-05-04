@@ -36,16 +36,15 @@ echo "Erreur de connexion";
             <a class="nav-link" href="./choice.html">Acceuil</a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            AJOUTEZ UN ABONNE
+            <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Ajoutez un abonne
             </button>
-            
             <!-- Modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">AJOUTEZ UN ABONNE</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Ajoutez un abonne</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -72,14 +71,14 @@ echo "Erreur de connexion";
                           </fieldset>
                           <fieldset>
                             <input type="email" name="mail" placeholder="Adresse mail">
-                          </fieldset>
-                          <button type="submit" name="submit">Envoyer</button>        
-                        </form>
+                          </fieldset>        
+                        
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
+                        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Fermez</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Envoyez</button>
                       </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -133,9 +132,9 @@ echo "Erreur de connexion";
         }
         ?>  
            
-      </tbody>
-    </table>
-  </div>
+          </tbody>
+        </table>
+      </div>
   </div>
 </div>
 </main>
@@ -148,3 +147,90 @@ echo "Erreur de connexion";
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </html>
+
+<style>
+  body{
+    background:;
+  }
+  .navbar{
+    background: #E1DAC8 !important;
+    display: flex !important;
+  }
+  nav ul{
+    display: flex !important;
+  }
+  ul li{
+    list-style-type: none;
+  }
+  .navbar a{
+        text-decoration: none;
+        color: #000 !important;
+    }
+  
+  form {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0;
+    margin :0 auto;
+  }
+        form h2{
+          text-align: center;
+        }
+        fieldset{
+          border:none;
+        }
+        input, textarea {
+          font    : .9em/1.5em "handwriting", sans-serif;
+          padding : 1% 3%;
+          display: block;
+          justify-content: center;
+          border: none;
+        }
+        
+        input{
+          width: 80%;
+          margin:2% ;
+        }
+        input{
+          border-bottom: 1px solid rgb(177, 172, 172);
+        }
+        
+        section{
+          width: 70%;
+          margin: 0px auto;
+          display: block;
+          justify-content: center;
+          text-align: center;
+          padding: 0px auto;
+  }
+  .texte{
+    padding: 1%;
+  }
+.table{
+  border-top: 1px solid !important;
+  margin-bottom: 25%;
+  overflow: auto;
+}
+h4{
+  margin: 3% 0;
+}
+  .table,tr,td{
+    background-color: white;
+  }
+  .t{
+        color: #fff;
+        background-color:rgb(102, 16, 16) !important;
+    }
+  
+  footer{
+    background: #E1DAC8 !important;
+    padding: 1%;
+  }
+</style>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</html>
+
+
